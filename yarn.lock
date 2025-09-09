@@ -8,9 +8,17 @@
   dependencies:
     "@babel/highlight" "^7.16.7"
 
+"@babel/helper-string-parser@^7.27.1":
+  version "7.27.1"
+  resolved "https://registry.yarnpkg.com/@babel/helper-string-parser/-/helper-string-parser-7.27.1.tgz#54da796097ab19ce67ed9f88b47bb2ec49367687"
+
 "@babel/helper-validator-identifier@^7.16.7":
   version "7.16.7"
   resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.16.7.tgz#e8c602438c4a8195751243da9031d1607d247cad"
+
+"@babel/helper-validator-identifier@^7.27.1":
+  version "7.27.1"
+  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.27.1.tgz#a7054dcc145a967dd4dc8fee845a57c1316c9df8"
 
 "@babel/highlight@^7.16.7":
   version "7.17.9"
@@ -20,12 +28,25 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@babel/parser@^7.11.5":
+  version "7.28.4"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.28.4.tgz#da25d4643532890932cc03f7705fe19637e03fa8"
+  dependencies:
+    "@babel/types" "^7.28.4"
+
 "@babel/runtime@^7.0.0-beta.39":
   version "7.0.0-beta.46"
   resolved "http://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.0.0-beta.46.tgz#466a9c0498f6d12d054a185981eef742d59d4871"
   dependencies:
     core-js "^2.5.3"
     regenerator-runtime "^0.11.1"
+
+"@babel/types@^7.11.5", "@babel/types@^7.28.4":
+  version "7.28.4"
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.28.4.tgz#0a4e618f4c60a7cd6c11cb2d48060e4dbe38ac3a"
+  dependencies:
+    "@babel/helper-string-parser" "^7.27.1"
+    "@babel/helper-validator-identifier" "^7.27.1"
 
 "@types/minimist@^1.2.0":
   version "1.2.2"
@@ -34,6 +55,23 @@
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.1.tgz#d3357479a0fdfdd5907fe67e17e0a85c906e1301"
+
+"@vue/compiler-core@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.0.0.tgz#25e4f079cf6c39f83bad23700f814c619105a0f2"
+  dependencies:
+    "@babel/parser" "^7.11.5"
+    "@babel/types" "^7.11.5"
+    "@vue/shared" "3.0.0"
+    estree-walker "^2.0.1"
+    source-map "^0.6.1"
+
+"@vue/compiler-dom@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@vue/compiler-dom/-/compiler-dom-3.0.0.tgz#4cbb48fcf1f852daef2babcf9953b681ac463526"
+  dependencies:
+    "@vue/compiler-core" "3.0.0"
+    "@vue/shared" "3.0.0"
 
 "@vue/component-compiler-utils@^1.2.1":
   version "1.2.1"
@@ -57,6 +95,31 @@
     clean-css "^4.1.11"
     hash-sum "^1.0.2"
     postcss-modules-sync "^1.0.0"
+
+"@vue/reactivity@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@vue/reactivity/-/reactivity-3.0.0.tgz#fd15632a608650ce2a969c721787e27e2c80aa6b"
+  dependencies:
+    "@vue/shared" "3.0.0"
+
+"@vue/runtime-core@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@vue/runtime-core/-/runtime-core-3.0.0.tgz#480febf1bfe32798b6abbd71a88f8e8b473a51c2"
+  dependencies:
+    "@vue/reactivity" "3.0.0"
+    "@vue/shared" "3.0.0"
+
+"@vue/runtime-dom@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@vue/runtime-dom/-/runtime-dom-3.0.0.tgz#e0d1f7c7e22e1318696014cc3501e06b288c2e11"
+  dependencies:
+    "@vue/runtime-core" "3.0.0"
+    "@vue/shared" "3.0.0"
+    csstype "^2.6.8"
+
+"@vue/shared@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.0.0.tgz#ec089236629ecc0f10346b92f101ff4339169f1a"
 
 abbrev@1:
   version "1.1.1"
@@ -1743,6 +1806,10 @@ csso@~2.3.1:
     clap "^1.0.9"
     source-map "^0.5.3"
 
+csstype@^2.6.8:
+  version "2.6.21"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.21.tgz#2efb85b7cc55c80017c66a5ad7cbd931fda3a90e"
+
 currently-unhandled@^0.4.1:
   version "0.4.1"
   resolved "http://registry.npm.taobao.org/currently-unhandled/download/currently-unhandled-0.4.1.tgz#988df33feab191ef799a61369dd76c17adf957ea"
@@ -2178,6 +2245,10 @@ estraverse@^4.1.0, estraverse@^4.1.1:
 estree-walker@^0.3.0:
   version "0.3.1"
   resolved "http://registry.npm.taobao.org/estree-walker/download/estree-walker-0.3.1.tgz#e6b1a51cf7292524e7237c312e5fe6660c1ce1aa"
+
+estree-walker@^2.0.1:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-2.0.2.tgz#52f010178c2a4c117a7757cfe942adb7d2da4cac"
 
 esutils@^2.0.2:
   version "2.0.2"
@@ -6217,9 +6288,13 @@ vue-template-es2015-compiler@^1.6.0:
   version "1.6.0"
   resolved "http://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
 
-vue@^2.5.11:
-  version "2.5.13"
-  resolved "http://registry.npm.taobao.org/vue/download/vue-2.5.13.tgz#95bd31e20efcf7a7f39239c9aa6787ce8cf578e1"
+vue@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-3.0.0.tgz#cfb5df5c34efce319b113a1667d12b74dcfd9c90"
+  dependencies:
+    "@vue/compiler-dom" "3.0.0"
+    "@vue/runtime-dom" "3.0.0"
+    "@vue/shared" "3.0.0"
 
 watchpack@^1.4.0:
   version "1.4.0"
